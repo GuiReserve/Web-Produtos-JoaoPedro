@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebProdutos</title>
+    <link rel="stylesheet" href="/static/styles/estilo.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Calculadora de Média do Aluno</a> | 
+        <a href="/consulta">Consulta de Média do Aluno</a>
+    </nav>
+    <div class="cad_produtos">
+        <form action="/validar_produto" method="post" class="cad_produtos_formulario">
+            <h2>Calculadora de Média do Aluno</h2>
+            <label for="">Digite a Primeira nota:</label>
+            <input type="text" name="nome_produto" id="nome_produto"step="0.1" min="0" max="10" required><br>> <br>
+
+            <label for="">Digite a Segunda Nota:</label>
+            <input type="text" name="valor_produto" id="valor_produto"> <br>
+
+            <label for="">Digite a Terceira Nota:</label>
+            <input type="text" name="quantidade_produto" id="quantidade_produto"> <br>
+
+            <div>
+                <button type="submit" class="cad_produtos_enviar">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
